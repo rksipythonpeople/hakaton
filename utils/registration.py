@@ -15,3 +15,6 @@ class Admin_del(StatesGroup):
 
 class Helper_del(StatesGroup):
     id = State()
+
+class Ask(StatesGroup):
+    ask_qu = State()

@@ -55,3 +55,6 @@ def take_info(from_user_id):
         id,user_name = res
         if from_user_id == id:
             return user_name 
+
+def ask_qui(id_user,text_message):
+    pass

@@ -5,7 +5,7 @@ from aiogram.dispatcher import FSMContext
 import utils.func_change_bd as fcb
 import re
 import sqlite3 as sql
-import handlers.admin_keyboard as ak
+import handlers.keyboard as ak
 
 # ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -166,4 +166,20 @@ async def del2_user_helper(message: types.Message, state: FSMContext):
     else:
         await message.answer("Недостаточно прав")
 
-# ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# user_helper = {}
+
+# @dp.message_handler(content_types=['text'],state=None)
+# async def ask(message: types.Message):
+#     if 'Задать вопрос' == message.text:
+#         await message.answer("Какой у вас вопрос?")
+#         await Ask.ask_qu.set()
+
+# @dp.message_handler(state=Ask.ask_qu)
+# async def ask2(message: types.Message, state: FSMContext):
+#     qu = message.text
+#     await state.update_data(ask_qu = qu)
+#     data = await state.get_data()
+
+    
